@@ -54,6 +54,7 @@ setup(
     url='https://github.com/StanfordVL/egl_probe',
     zip_safe=False,
     packages=find_packages(),
+    setup_requires=["cmake"],
     install_requires=[],
     ext_modules=[CMakeExtension('EGLProbe', sourcedir='egl_probe')],
     cmdclass=dict(build_ext=CMakeBuild),
